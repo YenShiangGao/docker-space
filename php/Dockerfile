@@ -13,5 +13,3 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-
-WORKDIR /var/www/ineedMoney
